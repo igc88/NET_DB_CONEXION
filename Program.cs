@@ -13,6 +13,8 @@ namespace NET_DB_Conexion {
                             1. Fabricantes y artículos
                             2. Departamentos y empleados
                             3. Almacenes y cajas
+                            4. Salas y películas
+                            5. Directores y despachos
                            ";
 
             Console.WriteLine(menu);
@@ -27,6 +29,12 @@ namespace NET_DB_Conexion {
                     break;
                 case 3:
                     E3 e3 = new E3();
+                    break;
+                case 4:
+                    E4 e4 = new E4();
+                    break;
+                case 5:
+                    E5 e5 = new E5();
                     break;
             }
 
