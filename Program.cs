@@ -12,6 +12,7 @@ namespace NET_DB_Conexion {
             string menu = @"Seleccione el ejercicio que desea ejecutar: 
                             1. Fabricantes y artículos
                             2. Departamentos y empleados
+                            3. Almacenes y cajas
                            ";
 
             Console.WriteLine(menu);
@@ -23,6 +24,9 @@ namespace NET_DB_Conexion {
                     break;
                 case 2:
                     E2 e2 = new E2();
+                    break;
+                case 3:
+                    E3 e3 = new E3();
                     break;
             }
 

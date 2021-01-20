@@ -46,6 +46,7 @@
     <Compile Include="Classes\SQLHelper.cs" />
     <Compile Include="Ejercicios\E1.cs" />
     <Compile Include="Ejercicios\E2.cs" />
+    <Compile Include="Ejercicios\E3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
