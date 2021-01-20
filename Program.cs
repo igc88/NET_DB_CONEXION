@@ -7,46 +7,24 @@ using System.Threading.Tasks;
 namespace NET_DB_Conexion {
     class Program {
         static void Main(string[] args) {
-            string sql;
+            int opt = 0;
 
-            SQLHelper dbManager = new SQLHelper("172.26.68.185", "master");
-            dbManager.Connect();
+            string menu = @"Seleccione el ejercicio que desea ejecutar: 
+                            1. Fabricantes y artículos
+                            2. Departamentos y empleados
+                           ";
 
-            sql = "CREATE DATABASE E1";
-            dbManager.Execute(sql);
+            Console.WriteLine(menu);
+            opt = int.Parse(Console.ReadLine());
 
-            sql = "USE E1";
-            dbManager.Execute(sql);
-
-            sql = @"CREATE TABLE Fabricantes (
-                    Codigo INT NOT NULL IDENTITY (1,1) PRIMARY KEY,
-                    Nombre NVARCHAR(100)
-                  )";
-
-            dbManager.Execute(sql);
-
-            sql = @"CREATE TABLE Articulos (
-                    Codigo INT NOT NULL IDENTITY (1,1) PRIMARY KEY,
-                    Nombre NVARCHAR(100),
-                    Precio INT,
-                    Fabricante INT NOT NULL FOREIGN KEY REFERENCES Fabricantes(Codigo)
-                  )";
-
-            dbManager.Execute(sql);
-
-            sql = "INSERT Fabricantes VALUES ('Peugeot'), ('BMW'), ('Mercedes'), ('Ford'), ('Seat') ";
-            dbManager.Execute(sql);
-
-            sql = @"INSERT Articulos VALUES 
-                    ('Peugeot 206', 10000, 1),
-                    ('Peugeot 307', 9500, 1),
-                    ('Mercedes AMG', 100000, 3), 
-                    ('Ford Fiesta', 6000, 4),
-                    ('Seat Ibiza', 7500, 5)
-                  ";
-            dbManager.Execute(sql);
-
-            dbManager.Disconnect();
+            switch (opt) {
+                case 1:
+                    E1 e1 = new E1();
+                    break;
+                case 2:
+                    E2 e2 = new E2();
+                    break;
+            }
 
             Console.ReadKey();
         }
