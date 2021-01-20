@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET_DB_Conexion", "NET_DB_Conexion.csproj", "{2EC912E0-B0D0-4FA8-9D24-17E6FEB412D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2EC912E0-B0D0-4FA8-9D24-17E6FEB412D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EC912E0-B0D0-4FA8-9D24-17E6FEB412D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EC912E0-B0D0-4FA8-9D24-17E6FEB412D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EC912E0-B0D0-4FA8-9D24-17E6FEB412D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {19575A83-BBAC-4C81-B00C-D7BE23D1AA63}
+	EndGlobalSection
+EndGlobal
