@@ -39,6 +39,9 @@ namespace NET_DB_Conexion {
                 case 6:
                     E6 e6 = new E6();
                     break;
+                case 7:
+                    E7 e7 = new E7();
+                    break;
             }
 
             Console.ReadKey();
