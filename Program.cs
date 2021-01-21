@@ -18,6 +18,7 @@ namespace NET_DB_Conexion {
                             6. Piezas y proveedores
                             7. Científicos y proyectos   
                             8. Grandes Almacenes
+                            9. Los investigadores
                            ";
 
             Console.WriteLine(menu);
@@ -47,6 +48,9 @@ namespace NET_DB_Conexion {
                     break;
                 case 8:
                     E8 e8 = new E8();
+                    break;
+                case 9:
+                    E9 e9 = new E9();
                     break;
             }
 
