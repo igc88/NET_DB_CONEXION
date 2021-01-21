@@ -15,6 +15,9 @@ namespace NET_DB_Conexion {
                             3. Almacenes y cajas
                             4. Salas y películas
                             5. Directores y despachos
+                            6. Piezas y proveedores
+                            7. Científicos y proyectos   
+                            8. Grandes Almacenes
                            ";
 
             Console.WriteLine(menu);
@@ -41,6 +44,9 @@ namespace NET_DB_Conexion {
                     break;
                 case 7:
                     E7 e7 = new E7();
+                    break;
+                case 8:
+                    E8 e8 = new E8();
                     break;
             }
 
